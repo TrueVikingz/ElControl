@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".loginFragment" android:id="@+id/frameLayout">
+    <TextView
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/Loginhead"
+            android:textSize="34sp"
+            android:background="#FFF387"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/UserLogin"
+            app:layout_constraintTop_toBottomOf="@+id/Loginhead"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Brugernavn eller E-mail"/>
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/UserLogin"
+            app:layout_constraintEnd_toEndOf="@+id/UserLogin"
+            app:layout_constraintStart_toStartOf="@+id/UserLogin"
+            android:layout_marginTop="16dp"
+            android:hint="Password"/>
+    <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Loginbtn"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            android:layout_marginTop="16dp"/>
+    <Button
+            android:text="Ny Bruger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NewUser"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            android:layout_marginTop="16dp"/>
+    <TextView
+            android:text="Glemt Kodeord?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ForgottenPsw"
+            app:layout_constraintTop_toBottomOf="@+id/NewUser"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
